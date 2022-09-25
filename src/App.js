@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 import Grid from "@mui/material/Grid";
+import Detail from "./components/Detail";
 
 function App() {
   return (
@@ -37,7 +38,7 @@ function App() {
             textAlign: "center",
             paddingLeft: "30px",
             height: "86vh",
-            backgroundColor: "grey",
+            backgroundColor: "white",
           }}
         >
           <Routes>
@@ -56,6 +57,7 @@ function App() {
             ></Route>
 
             <Route exact path="/navigation" element={<Navigation />}></Route>
+            <Route exact path="/detail" element={<Detail />}></Route>
           </Routes>
         </Grid>
         <Grid

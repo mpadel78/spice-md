@@ -1,4 +1,7 @@
 import React from "react";
+import { Select, MenuItem, Button } from "@mui/material/";
+import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 
 import Grid from "@mui/material/Grid";
 function Welcome() {
@@ -11,6 +14,8 @@ function Welcome() {
         container
         spacing={2}
       >
+        <br />
+        <br />
         <Grid
           item
           xs={12}
@@ -21,7 +26,12 @@ function Welcome() {
             paddingLeft: "30px",
           }}
         >
-          Spice MD make this bold cool looking
+          <img
+            style={{
+              height: "40vh",
+            }}
+            src={require("./icon.png")}
+          />
         </Grid>
         <Grid
           item
@@ -33,7 +43,7 @@ function Welcome() {
             paddingLeft: "30px",
           }}
         >
-          Insert some icon/logo of spice MD
+          <Typography variant="h3">Spice MD</Typography>
         </Grid>
         <Grid
           item
@@ -45,8 +55,12 @@ function Welcome() {
             paddingLeft: "30px",
           }}
         >
-          Type some catchy lines here
+          <Typography variant="h5">Spice for life.</Typography>
         </Grid>
+        <br />
+        <br />
+        <br />
+        <br />
         <Grid
           item
           xs={12}
@@ -57,7 +71,11 @@ function Welcome() {
             paddingLeft: "30px",
           }}
         >
-          start button here
+          <Button variant="contained" color="success">
+            <Link to="/symptoms" style={{ textDecoration: "none" }}>
+              Start the application
+            </Link>
+          </Button>
         </Grid>
       </Grid>
     </div>
